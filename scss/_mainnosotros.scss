@@ -1,0 +1,62 @@
+/**NOSOTROS**/
+
+.textOasis {
+    max-width: 75%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: $color-fondo-texto-gris;
+  }
+  
+  /**FORMULARIO**/
+  form {
+    max-width: 24rem;
+    margin: 0 auto;
+    border: $borde-generico;
+    background-color: #f9f9f9;
+  
+    /* Estilos para los campos de entrada */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border: $borde-generico;
+    }
+  
+    /* Estilos para los botones */
+    input[type="submit"],
+    input[type="reset"] {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: $color-fondo-texto-blanco;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: $margen-diez-px;
+    }
+  
+    input[type="reset"] {
+      background-color: $color-rojo;
+  
+      &:hover {
+        background-color: $color-anaranjado;
+      }
+  
+  
+    }
+  
+  }
+  
+  /**mapa**/
+  .map-container {
+    height: 22rem;
+    border: $borde-generico;
+  
+    iframe {
+      width: $cien-porciento;
+      height: $cien-porciento;
+      border: 0;
+    }
+  }
+  
+  

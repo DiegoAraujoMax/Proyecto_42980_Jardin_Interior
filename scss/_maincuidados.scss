@@ -1,0 +1,47 @@
+/**CUIDADOS**/
+
+.background-image {
+    background-image: url("../assets/img/piedras_fondo_botanico_cuidados.jpg");
+    background-size: contain;
+    background-position: center;
+    color: $color-fondo-texto-blanco;
+    padding: 20px;
+  }
+  
+  .h1_Intro {
+    background-color: $color-fondo-texto-negro;
+    border-radius: 2rem;
+  }
+  
+  .introduccion {
+    background-color: $color-fondo-texto-negro;
+    border-radius: 2rem;
+  }
+  
+  .cuidado {
+    background-color: $color-fondo-texto-negro;
+    border-radius: 2rem;
+  
+    .image-container {
+      img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border: $borde-generico;
+        border-radius: 5px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cuidado {
+      .image-container {
+        flex-wrap: wrap;
+        img {
+          width: $cien-porciento;
+          margin-bottom: $margen-diez-px;
+        }
+      }
+    }
+  }
+  

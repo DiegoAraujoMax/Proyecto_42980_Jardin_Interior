@@ -1,0 +1,54 @@
+/**MAIN INICIO**/
+
+/**SECCION DE PLANTAS SOLICITADAS**/
+.contenedorInicio {
+    .contenedorInicio_galeria__imagen {
+      width: 150px;
+      height: 150px;
+  
+      img {
+        width: $cien-porciento;
+        height: $cien-porciento;
+        object-fit: cover;
+        border-radius: 0.25rem;
+      }
+  
+      .contenedorInicio_galeria__subtitulo {
+        left: 0;
+        background-color: $color-fondo-texto-negro;
+        color: $color-blanco;
+        padding: 5px $margen-diez-px;
+        font-size: 14px;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+  
+  /**CONTENIDO TEXTO DE BIENVENIDA**/
+  .contenedorInicio__SectionBienvenida {
+    background-color: $color-relleno-base-verde-claro;
+    border-radius: $margen-diez-px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: rgba(245, 245, 245, 0.945);
+  }
+  
+  /**CARDS DE CLEINTES Y SUS EXPERIENCIAS**/
+  .contenedorInicio__card-section {
+    color: #d6cda4;
+  
+    .contenedorInicio__card-section__card {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #000000c4;
+  
+      img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0.25rem;
+        border: $borde-generico;
+        margin-top: 5px
+      }
+    }
+  }
+  
