@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 /**HEADER*/
 .header {
@@ -13,53 +10,35 @@
   position: sticky;
   z-index: 10;
 }
-
-.navbar-light .navbar-nav .colorAnclaNav {
-  color: #d6cda4;
-}
-
-.colorNav {
-  background-color: #3d8361;
-}
-
-.imgLogo {
+.header .navbar-light .imgLogo {
   object-fit: scale-down;
   background-color: #d6cda4;
   margin-left: 10px;
 }
-
-
+.header .navbar-light .navbar-nav .colorAnclaNav {
+  color: #d6cda4;
+}
+.header .colorNav {
+  background-color: #3d8361;
+}
 
 main {
   background-color: #eef2e6;
 }
 
-/**INICIO**/
-
-
-/**TITULO DE PLANTAS MAS SOLICITADAS**/
-.tituloPrincipal {
-  margin-bottom: 3rem;
-}
-
-.contenedorInicio_galeria {
-  margin-bottom: 2rem;
-}
-
-.contenedorInicio_galeria__imagen {
+/**MAIN INICIO**/
+/**SECCION DE PLANTAS SOLICITADAS**/
+.contenedorInicio .contenedorInicio_galeria__imagen {
   width: 150px;
   height: 150px;
 }
-
-.contenedorInicio_galeria__imagen img {
+.contenedorInicio .contenedorInicio_galeria__imagen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0.25rem;
 }
-
-.contenedorInicio_galeria__subtitulo {
-  bottom: 0;
+.contenedorInicio .contenedorInicio_galeria__imagen .contenedorInicio_galeria__subtitulo {
   left: 0;
   background-color: rgba(0, 0, 0, 0.829);
   color: white;
@@ -68,84 +47,69 @@ main {
   border-radius: 0.25rem;
 }
 
-
 /**CONTENIDO TEXTO DE BIENVENIDA**/
 .contenedorInicio__SectionBienvenida {
-  background-color: #1c6758ee;
+  background-color: rgba(28, 103, 88, 0.6588235294);
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 20px;
   color: rgba(245, 245, 245, 0.945);
 }
 
-
 /**CARDS DE CLEINTES Y SUS EXPERIENCIAS**/
 .contenedorInicio__card-section {
-  /**display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  gap: 10px;**/
   color: #d6cda4;
 }
-
-.contenedorInicio__card-section__card {
+.contenedorInicio__card-section .contenedorInicio__card-section__card {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #000000c4;
+  background-color: rgba(0, 0, 0, 0.768627451);
 }
-
-.contenedorInicio__card-section__card img {
+.contenedorInicio__card-section .contenedorInicio__card-section__card img {
   width: 80%;
   height: auto;
   object-fit: cover;
   border-radius: 0.25rem;
-  border: 2px solid #ffffff;
-  margin-top: 5px
+  border: 1px solid #ccc;
+  margin-top: 5px;
 }
 
+/**CATALOGO**/
 .content-catalogo {
   max-width: 800px;
-
 }
-
 .content-catalogo h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
-.gallery-catalogo {
+.content-catalogo .gallery-catalogo {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
-
-.image-catalogo {
+.content-catalogo .gallery-catalogo .image-catalogo {
   height: 200px;
 }
-
-.image-catalogo img {
+.content-catalogo .gallery-catalogo .image-catalogo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.image-catalogo h3 {
+.content-catalogo .gallery-catalogo .image-catalogo h3 {
   position: absolute;
   bottom: 10px;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.829);
   color: #fff;
   padding: 8px 0;
   margin: 0;
   font-size: 16px;
   text-align: center;
 }
-
 .content-catalogo p {
   margin-top: 5px;
   font-size: 16px;
   font-weight: bold;
 }
-
 
 /**CUIDADOS**/
 .background-image {
@@ -157,17 +121,17 @@ main {
 }
 
 .h1_Intro {
-  background-color: rgba(0, 0, 0, 0.774);
+  background-color: rgba(0, 0, 0, 0.829);
   border-radius: 2rem;
 }
 
-.introduccion{
-  background-color: rgba(0, 0, 0, 0.774);
+.introduccion {
+  background-color: rgba(0, 0, 0, 0.829);
   border-radius: 2rem;
 }
 
 .cuidado {
-  background-color: rgba(0, 0, 0, 0.774);
+  background-color: rgba(0, 0, 0, 0.829);
   border-radius: 2rem;
 }
 
@@ -178,7 +142,6 @@ main {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 
 /**NOSOTROS**/
 .textOasis {
@@ -197,15 +160,15 @@ form {
 }
 
 /* Estilos para los campos de entrada */
-input[type="text"],
-input[type="email"],
+input[type=text],
+input[type=email],
 textarea {
- border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 /* Estilos para los botones */
-input[type="submit"],
-input[type="reset"] {
+input[type=submit],
+input[type=reset] {
   display: inline-block;
   padding: 10px 20px;
   background-color: #4CAF50;
@@ -217,14 +180,15 @@ input[type="reset"] {
   margin-right: 10px;
 }
 
-input[type="reset"] {
+input[type=reset] {
   background-color: #f44336;
 }
 
-input[type="submit"]:hover{
+input[type=submit]:hover {
   background-color: #00bef8;
 }
-input[type="reset"]:hover {
+
+input[type=reset]:hover {
   background-color: orange;
 }
 
@@ -241,12 +205,9 @@ input[type="reset"]:hover {
 
 /**footer*/
 footer {
-  background-color: #1c6758a8;
+  background-color: rgba(28, 103, 88, 0.6588235294);
   color: white;
-  padding: 20px;
-  text-align: center;
 }
-
 
 .icon {
   color: black;
@@ -257,20 +218,15 @@ footer {
   .image-container {
     flex-wrap: wrap;
   }
-
   .image-container img {
     width: 100%;
     margin-bottom: 10px;
   }
 }
-
-
 /**BLOG**/
-
-
 .bienvenida, .descubrimiento, .decoracion, .curioso, .tendencia {
   border: 5px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);
 }
 
 .imgBlog {
@@ -278,9 +234,8 @@ footer {
   height: 300px;
   object-fit: cover;
   border: 5px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s ease; 
-  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .imgBlog:hover {
@@ -292,9 +247,13 @@ footer {
   height: 100%;
   object-fit: cover;
 }
-.colorAnclaBlog{
+
+.colorAnclaBlog {
   color: black;
 }
-.colorAnclaBlog:hover{
+
+.colorAnclaBlog:hover {
   color: orange;
 }
+
+/*# sourceMappingURL=estilos.css.map */

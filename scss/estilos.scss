@@ -1,0 +1,294 @@
+$color-relleno-base-crudo:  #d6cda4;
+$color-relleno-base-claro:  #eef2e6;
+$color-relleno-base-verde-oscuro:  #3d8361;
+$color-relleno-base-verde-claro:  #1c6758a8;
+$color-fondo-texto-negro:  rgba(0, 0, 0, 0.829);
+$color-fondo-texto-gris:  rgba(128, 128, 128, 0.466);
+$color-fondo-texto-blanco: #fff;
+$color-anaranjado: orange;
+$color-blanco:white;
+$color-negro: black;
+$color-rojo: #f44336;
+$color-azul: #00bef8;
+$cien-porciento: 100%;
+$borde-generico: 1px solid #ccc;
+$borde-generico-dos: 5px solid #fff;
+$margen-diez-px: 10px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/**HEADER*/
+.header {
+  top: 0;
+  position: sticky;
+  z-index: 10;
+  .navbar-light{
+    .imgLogo {
+      object-fit: scale-down;
+      background-color: $color-relleno-base-crudo;
+      margin-left: $margen-diez-px;
+    }
+    .navbar-nav{
+      .colorAnclaNav{
+        color: $color-relleno-base-crudo;
+      }
+    }
+  }
+  .colorNav {
+    background-color: $color-relleno-base-verde-oscuro;
+  }
+}
+
+
+main {
+  background-color: $color-relleno-base-claro;
+}
+
+
+/**MAIN INICIO**/
+
+/**SECCION DE PLANTAS SOLICITADAS**/
+.contenedorInicio{
+  .contenedorInicio_galeria__imagen {
+  width: 150px;
+  height: 150px;
+  img {
+    width: $cien-porciento;
+    height: $cien-porciento;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+  .contenedorInicio_galeria__subtitulo {
+  left: 0;
+  background-color: $color-fondo-texto-negro;
+  color: $color-blanco;
+  padding: 5px $margen-diez-px;
+  font-size: 14px;
+  border-radius: 0.25rem;
+}
+}
+}
+
+/**CONTENIDO TEXTO DE BIENVENIDA**/
+.contenedorInicio__SectionBienvenida {
+  background-color: $color-relleno-base-verde-claro;
+  border-radius:$margen-diez-px; 
+  margin-bottom: 20px;
+  padding: 20px;
+  color: rgba(245, 245, 245, 0.945);
+}
+
+/**CARDS DE CLEINTES Y SUS EXPERIENCIAS**/
+.contenedorInicio__card-section {
+  color: #d6cda4;
+  .contenedorInicio__card-section__card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #000000c4;
+  img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    border:$borde-generico;
+    margin-top: 5px
+  }
+}
+}
+
+
+/**CATALOGO**/
+
+.content-catalogo {
+  max-width: 800px;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .gallery-catalogo {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    .image-catalogo {
+      height: 200px;
+      img {
+        width: $cien-porciento;
+        height: $cien-porciento;
+        object-fit: cover;
+      }
+      h3 {
+        position: absolute;
+        bottom: $margen-diez-px;
+        left: 0;
+        width: 100%;
+        background-color: $color-fondo-texto-negro;
+        color: $color-fondo-texto-blanco;
+        padding: 8px 0;
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+    
+  }
+  p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+
+/**CUIDADOS**/
+
+.background-image {
+  background-image: url("../assets/img/piedras_fondo_botanico_cuidados.jpg");
+  background-size: contain;
+  background-position: center;
+  color: $color-fondo-texto-blanco;
+  padding: 20px;
+}
+
+.h1_Intro {
+  background-color:$color-fondo-texto-negro;
+  border-radius: 2rem;
+}
+
+.introduccion{
+  background-color: $color-fondo-texto-negro;
+  border-radius: 2rem;
+}
+
+.cuidado {
+  background-color: $color-fondo-texto-negro;
+  border-radius: 2rem;
+}
+
+.image-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: $borde-generico;
+  border-radius: 5px;
+}
+
+
+/**NOSOTROS**/
+.textOasis {
+  max-width: 75%;
+  margin: 0 auto;
+  border-radius: 2rem;
+  background-color: $color-fondo-texto-gris;
+}
+
+/**FORMULARIO**/
+form {
+  max-width: 24rem;
+  margin: 0 auto;
+  border: $borde-generico;
+  background-color: #f9f9f9;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+ border: $borde-generico;
+}
+
+/* Estilos para los botones */
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: $color-fondo-texto-blanco;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: $margen-diez-px;
+}
+
+input[type="reset"] {
+  background-color: $color-rojo;
+}
+
+input[type="submit"]:hover{
+  background-color: $color-azul;
+}
+input[type="reset"]:hover {
+  background-color: $color-anaranjado;
+}
+
+.map-container {
+  height: 22rem;
+  border: $borde-generico;
+}
+
+.map-container iframe {
+  width: $cien-porciento;
+  height: $cien-porciento;
+  border: 0;
+}
+
+/**footer*/
+footer {
+  background-color: $color-relleno-base-verde-claro;
+  color: $color-blanco;
+}
+
+
+.icon {
+  color: $color-negro;
+  margin: 0 $margen-diez-px;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    flex-wrap: wrap;
+  }
+
+  .image-container img {
+    width: $cien-porciento;
+    margin-bottom: $margen-diez-px;
+  }
+}
+
+
+/**BLOG**/
+
+
+.bienvenida, .descubrimiento, .decoracion, .curioso, .tendencia {
+  border: $borde-generico-dos;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);  
+}
+
+.imgBlog {
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border:$borde-generico-dos;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+  
+}
+
+.imgBlog:hover {
+  transform: scale(1.05);
+}
+
+.imgBlog img {
+  width: $cien-porciento;
+  height: $cien-porciento;
+  object-fit: cover;
+}
+.colorAnclaBlog{
+  color:$color-negro;
+}
+.colorAnclaBlog:hover{
+  color: $color-anaranjado;
+}
