@@ -1,62 +1,61 @@
 /**NOSOTROS**/
 
 .textOasis {
-    max-width: 75%;
-    margin: 0 auto;
-    border-radius: 2rem;
-    background-color: $color-fondo-texto-gris;
+  max-width: 75%;
+  margin: 0 auto;
+  /*border-radius: 2rem;
+  background-color: map-get($fondo-texto , ft-gris);*/
+  @include bg-color-gr-radius(2rem);
+}
+
+/**FORMULARIO**/
+form {
+  max-width: 24rem;
+  margin: 0 auto;
+  border: map-get($bordes , borde-solid-unpx);
+  background-color: #f9f9f9;
+
+  /* Estilos para los campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: map-get($bordes , borde-solid-unpx);
   }
-  
-  /**FORMULARIO**/
-  form {
-    max-width: 24rem;
-    margin: 0 auto;
-    border: $borde-generico;
-    background-color: #f9f9f9;
-  
-    /* Estilos para los campos de entrada */
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      border: $borde-generico;
-    }
-  
-    /* Estilos para los botones */
-    input[type="submit"],
-    input[type="reset"] {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: $color-fondo-texto-blanco;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 14px;
-      margin-right: $margen-diez-px;
-    }
-  
-    input[type="reset"] {
-      background-color: $color-rojo;
-  
-      &:hover {
-        background-color: $color-anaranjado;
-      }
-  
-  
-    }
-  
+
+  /* Estilos para los botones */
+  input[type="submit"],
+  input[type="reset"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: map-get($fondo-texto, ft-blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: $margen-diez-px;
   }
-  
-  /**mapa**/
-  .map-container {
-    height: 22rem;
-    border: $borde-generico;
-  
-    iframe {
-      width: $cien-porciento;
-      height: $cien-porciento;
-      border: 0;
+
+  input[type="reset"] {
+    background-color: map-get($color, rojo);
+
+    &:hover {
+      background-color: map-get($color, anaranjado);
     }
+
+
   }
-  
-  
+
+}
+
+/**mapa**/
+.map-container {
+  height: 22rem;
+  border: map-get($bordes , borde-solid-unpx);
+
+  iframe {
+    width: $cien-porciento;
+    height: $cien-porciento;
+    border: 0;
+  }
+}

@@ -1,26 +1,24 @@
 /**HEADER*/
 .header {
-    top: 0;
-    position: sticky;
-    z-index: 10;
-  
-    .navbar-light {
-      .imgLogo {
-        object-fit: scale-down;
-        background-color: $color-relleno-base-crudo;
-        margin-left: $margen-diez-px;
-      }
-  
-      .navbar-nav {
-        .colorAnclaNav {
-          color: $color-relleno-base-crudo;
-        }
-      }
+  top: 0;
+  position: sticky;
+  z-index: 10;
+
+  .navbar-light {
+    .imgLogo {
+      object-fit: scale-down;
+      background-color: map-get($color-web, c-crudo);
+      margin-left: $margen-diez-px;
     }
-  
-    .colorNav {
-      background-color: $color-relleno-base-verde-oscuro;
+
+    .navbar-nav {
+      .colorAnclaNav {
+        color: map-get($color-web, c-crudo);
+      }
     }
   }
-  
-  
+
+  .colorNav {
+    background-color: map-get($color-web, c-verde-oscuro);
+  }
+}

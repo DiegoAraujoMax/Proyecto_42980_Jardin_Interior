@@ -1,10 +1,10 @@
 /**FOOTER*/
 footer {
-    background-color: $color-relleno-base-verde-claro;
-    color: $color-blanco;
-  
-    .icon {
-      color: $color-negro;
-      margin: 0 $margen-diez-px;
-    }
-  }    
+  background-color: map-get($color-web, c-verde-claro);
+  color: map-get($color, blanco);
+
+  .icon {
+    color: map-get($color, negro);
+    margin: 0 $margen-diez-px;
+  }
+}

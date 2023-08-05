@@ -155,8 +155,10 @@ main {
 .textOasis {
   max-width: 75%;
   margin: 0 auto;
-  border-radius: 2rem;
+  /*border-radius: 2rem;
+  background-color: map-get($fondo-texto , ft-gris);*/
   background-color: rgba(128, 128, 128, 0.466);
+  border-radius: 2rem;
 }
 
 /**FORMULARIO**/
@@ -208,9 +210,14 @@ form input[type=reset]:hover {
 .descubrimiento,
 .decoracion,
 .curioso,
-.tendencia {
-  border: 5px solid #fff;
+.tendencia,
+.bienvenida .imgBlog,
+.descubrimiento .imgBlog,
+.decoracion .imgBlog,
+.curioso .imgBlog,
+.tendencia .imgBlog {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);
+  border: 5px solid #fff;
 }
 .bienvenida .imgBlog,
 .descubrimiento .imgBlog,
@@ -220,8 +227,6 @@ form input[type=reset]:hover {
   max-width: 400px;
   height: 300px;
   object-fit: cover;
-  border: 5px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 .bienvenida .imgBlog:hover,

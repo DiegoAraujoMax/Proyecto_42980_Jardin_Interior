@@ -1,16 +1,31 @@
-$color-relleno-base-crudo: #d6cda4;
-$color-relleno-base-claro: #eef2e6;
-$color-relleno-base-verde-oscuro: #3d8361;
-$color-relleno-base-verde-claro: #1c6758a8;
-$color-fondo-texto-negro: rgba(0, 0, 0, 0.829);
-$color-fondo-texto-gris: rgba(128, 128, 128, 0.466);
-$color-fondo-texto-blanco: #fff;
-$color-anaranjado: orange;
-$color-blanco: white;
-$color-negro: black;
-$color-rojo: #f44336;
-$color-azul: #00bef8;
+
 $cien-porciento: 100%;
-$borde-generico: 1px solid #ccc;
-$borde-generico-dos: 5px solid #fff;
+
 $margen-diez-px: 10px;
+
+
+$bordes: (
+    borde-solid-unpx: 1px solid #ccc,
+    borde-solid-cincopx: 5px solid #fff,
+);
+
+$color-web: (
+    c-verde-oscuro: #3d8361,
+    c-verde-claro: #1c6758a8,
+    c-claro: #eef2e6,
+    c-crudo: #d6cda4,
+);
+
+$fondo-texto: (
+    ft-negro: rgba(0, 0, 0, 0.829),
+    ft-gris: rgba(128, 128, 128, 0.466),
+    ft-blanco: #fff,
+);
+
+$color: (
+    anaranjado: orange,
+    blanco: white,
+    negro: black,
+    rojo: #f44336,
+    azul: #00bef8,
+);

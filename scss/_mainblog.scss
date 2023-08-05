@@ -5,15 +5,14 @@
 .decoracion,
 .curioso,
 .tendencia {
-  border: $borde-generico-dos;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);
+  border: map-get($bordes, borde-solid-cincopx);
 
   .imgBlog {
     max-width: 400px;
     height: 300px;
     object-fit: cover;
-    border: $borde-generico-dos;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    @extend .tendencia;
     transition: transform 0.3s ease;
 
     &:hover {
@@ -32,10 +31,9 @@
   }
 
   .colorAnclaBlog {
-    color: $color-negro;
-
+    color: map-get($color, negro);
     &:hover {
-      color: $color-anaranjado;
+      color: map-get($color, anaranjado);
     }
   }
 }

@@ -1,9 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  main {
-    background-color: $color-relleno-base-claro;
-  }
+main {
+  background-color: map-get($color-web , c-claro);
+}

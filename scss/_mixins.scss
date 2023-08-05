@@ -1,0 +1,9 @@
+@mixin bg-color-ng-radius($radius) {
+    background-color: map-get($fondo-texto, ft-negro);
+   border-radius: $radius;
+}
+
+@mixin bg-color-gr-radius($radius) {
+    background-color: map-get($fondo-texto , ft-gris);
+   border-radius: $radius;
+}
