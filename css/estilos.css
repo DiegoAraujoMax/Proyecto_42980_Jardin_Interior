@@ -18,6 +18,8 @@ main {
   object-fit: scale-down;
   background-color: #d6cda4;
   margin-left: 10px;
+  width: 40px;
+  height: auto;
 }
 .header .navbar-light .navbar-nav .colorAnclaNav {
   color: #d6cda4;

@@ -9,6 +9,8 @@
       object-fit: scale-down;
       background-color: map-get($color-web, c-crudo);
       margin-left: $margen-diez-px;
+      width: 40px;
+      height: auto;
     }
 
     .navbar-nav {
